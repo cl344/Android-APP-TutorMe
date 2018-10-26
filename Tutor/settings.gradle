@@ -1,0 +1,1 @@
+include ':leancloudchatkit',':app'

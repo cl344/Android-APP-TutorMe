@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background_image2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/background_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"
+                android:layout_centerHorizontal="true" />
+
+        <Button
+                android:id="@+id/upload_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minHeight="5dp"
+                android:text="@string/upload"
+                android:textSize="13sp"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/user_profile_name_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upload_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_profile_short_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_name_v2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Your Bio"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <include layout="@layout/profile_header_request_message"
+                 android:id="@+id/profile_header_request_message_view"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_below="@+id/user_profile_short_bio"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="11dp"
+                 android:visibility="gone"/>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_marginTop="5dp"
+                android:background="#d3d3d3"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/profile_info_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:padding="20dp"
+                    android:text="@string/profile_experience_header"/>
+
+            <TextView
+                    android:id="@+id/profile_info_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:padding="20dp"
+                    android:text="@string/profile_review_header" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

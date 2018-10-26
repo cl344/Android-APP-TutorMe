@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:paddingLeft="12dp"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/course_taken_detail_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_taken_semester"
+        tools:text="Year: Spring 2017" />
+
+    <TextView
+        android:id="@+id/course_taken_detail_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:text="@string/course_taken_grade"
+        tools:text="Grades: A"/>
+
+</LinearLayout>

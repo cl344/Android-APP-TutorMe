@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="compsci290.edu.duke.tutor">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".MyLeanCloudApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TutorMe"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+
+        <!-- 实时通信模块、推送（均需要加入以下声明） START -->
+        <!-- 实时通信模块、推送都要使用 PushService -->
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 实时通信模块、推送 END -->
+
+
+        <!-- 反馈组件（需要加入以下声明）START -->
+        <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" />
+        <activity
+            android:name=".activities.AboutPage"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.AvailableTutors"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".loginregistration.IdActivity" />
+        <activity android:name=".loginregistration.RegisterActivity" />
+        <activity android:name=".loginregistration.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profile.ProfileActivity" />
+        <activity android:name=".profile.ExperienceActivity" />
+        <activity android:name="com.avos.avoscloud.search.SearchActivity" />
+        <activity android:name=".profile.ProfileReviewActivity" />
+        <activity android:name=".activities.VenmoEnterInfoActivity" />
+        <activity
+            android:name=".adapters.RequestSent"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".pendingrequests.PendingRequests"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".loginregistration.ChangePwdActivity"></activity>
+    </application>
+
+</manifest>

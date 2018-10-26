@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_image2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/background_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/upload_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:minHeight="5dp"
+            android:text="@string/upload"
+            android:textSize="13sp"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/user_profile_name_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/upload_pic"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/user_profile_short_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_name_v2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Best Tutor on Earth"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/linearLayout3">
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

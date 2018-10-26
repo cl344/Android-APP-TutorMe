@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">TutorMe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_taken_semester">Year: %2$s</string>
+    <string name="course_taken_grade">Grade: %2$s</string>
+    <string name="course_taken_grade_v2">- Grade: %1$s</string>
+    <string name="course_taken_semester_v2">- Semester: %1$s</string>
+    <string name="course_taken_isTA_v2">- TA: %1$s</string>
+    <string name="upload">Upload Profile Picture</string>
+
+    <!--Main Activity-->
+
+    <string name="request_sent_card_title">Request Sent</string>
+    <string name="request_sent_session_duration"><b>Session duration</b>: %1$d</string>
+    <string name="request_sent_time"><b>Sent at</b>: %1$s</string>
+    <string name="request_sent_status"><b>Status</b>: %1$s</string>
+
+    <!--Pending Request-->
+
+    <string name="pending_request_card_button_accept">Accept</string>
+    <string name="pending_request_card_button_decline">Decline</string>
+
+    <!--AVOSCloud Database Table-->
+
+    <!--table name-->
+    <string name="database_table_user">_User</string>
+    <string name="database_table_userinfo">UserInfo</string>
+    <string name="database_table_tutor">Tutor</string>
+    <string name="database_table_request">Request</string>
+    <string name="database_table_course">Course</string>
+    <string name="database_table_session">Session</string>
+    <string name="database_table_course_taken">CourseTaken</string>
+    <string name="database_table_comment">Comment</string>
+    <string name="database_table_review">Review</string>
+
+    <!--column name-->
+    <string name="database_table_tutor_user">user</string>
+    <string name="database_table_tutor_rating">rating</string>
+    <string name="database_table_tutor_bio">bio</string>
+
+    <string name="database_table_user_email">email</string>
+    <string name="database_table_user_username">username</string>
+    <string name="database_table_user_uname">uname</string>
+    <string name="database_table_user_year">year</string>
+    <string name="database_table_user_course">course</string>
+
+    <string name="database_table_userinfo_username">username</string>
+    <string name="database_table_userinfo_tutor">tutor</string>
+    <string name="database_table_userinfo_firstname">firstName</string>
+    <string name="database_table_userinfo_year">year</string>
+    <string name="database_table_userinfo_bio">bio</string>
+    <string name="database_table_userinfo_lastname">lastName</string>
+    <string name="database_table_userinfo_isTutor">isTutor</string>
+
+    <string name="database_table_request_tuteeID">tuteeID</string>
+    <string name="database_table_request_hasChosen">hasChosen</string>
+    <string name="database_table_request_duration">duration</string>
+    <string name="database_table_request_tutorID">tutorID</string>
+    <string name="database_table_request_courseID">courseID</string>
+    <string name="database_table_request_comment">comment</string>
+
+    <string name="database_table_course_availableTutors">availableTutors</string>
+    <string name="database_table_course_name">name</string>
+    <string name="database_table_course_code">code</string>
+
+    <string name="database_table_session_request">Request</string>
+    <string name="database_table_session_tuteeID">tuteeID</string>
+    <string name="database_table_session_startTime">startTime</string>
+    <string name="database_table_session_duration">Duration</string>
+    <string name="database_table_session_tutorID">tutorID</string>
+    <string name="database_table_session_courseID">courseID</string>
+
+    <string name="database_table_course_taken_uid">uid</string>
+    <string name="database_table_course_taken_grade">grade</string>
+    <string name="database_table_course_taken_courseid">courseId</string>
+    <string name="database_table_course_taken_isTA">isTA</string>
+    <string name="database_table_course_taken_semester">semester</string>
+
+    <string name="database_table_comment_comment">Comment</string>
+    <string name="database_table_comment_commenterid">Commenterid</string>
+
+    <string name="database_table_review_reviewerid">reviewerId</string>
+    <string name="database_table_review_revieweeid">revieweeId</string>
+    <string name="database_table_review_review">review</string>
+
+    <!--profile-->
+
+    <string name="profile_default_user_name">Jia Zeng</string>
+    <string name="profile_default_user_bio">Best Tutor on Earth</string>
+    <string name="profile_experience_header">Background</string>
+    <string name="profile_review_header">Reviews</string>
+
+    <string name="profile_button_request_tutor">Request</string>
+    <string name="profile_button_send_message">Message</string>
+    <string name="profile_button_send_venmo">Venmo</string>
+
+    <!--session-->
+
+    <string name="session_info_card_session_length">Session Length: </string>
+    <string name="session_info_card_tutor_name">Tutor name: </string>
+    <string name="session_info_card_tutor_rating">Tutor Rating: </string>
+    <string name="session_info_card_comment">Comments: </string>
+
+</resources>
