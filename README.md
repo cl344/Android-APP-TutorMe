@@ -13,7 +13,7 @@ This App if an online platform for Tutors and Tutees to find each other.
 ## TutorMe App Documentation
 <bookmap>
   <!-- Embed entire PDF file -->
-  <chapter href="file.pdf" format="pdf">
+  <chapter href="TutorMe_Documentation.pdf" format="pdf">
     <topicmeta>
       <navtitle>Title #1</navtitle>
     </topicmeta>
