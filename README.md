@@ -7,7 +7,7 @@ This App if an online platform for Tutors and Tutees to find each other.
 * Allows tutees to rate and comment their tutors in this App.
 
 ## quick view of TutorMe
-![alt text](tutorme_img.png)
+![alt text](TutorMe.png)
 
 
 
