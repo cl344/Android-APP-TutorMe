@@ -11,4 +11,4 @@ This App if an online platform for Tutors and Tutees to find each other.
 
 
 ## TutorMe App Documentation
-![alt text](documentation/1.tiff)
+![alt text](documentation/1.png)
