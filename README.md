@@ -11,27 +11,4 @@ This App if an online platform for Tutors and Tutees to find each other.
 
 
 ## TutorMe App Documentation
-<bookmap>
-  <!-- Embed entire PDF file -->
-  <chapter href="TutorMe_Documentation.pdf" format="pdf">
-    <topicmeta>
-      <navtitle>Title #1</navtitle>
-    </topicmeta>
-  </chapter>
-
-  <!-- Embed second page of PDF file -->
-  <chapter href="file.pdf#page=2" format="pdf">
-    <topicmeta>
-      <navtitle>Title #2</navtitle>
-    </topicmeta>
-  </chapter>
-
-  <!-- Embed external PDF file -->
-  <appendix href="http://www.stat.berkeley.edu/~census/sample.pdf"
-            format="pdf"
-            scope="external">
-    <topicmeta>
-      <navtitle>Title #3</navtitle>
-    </topicmeta>
-  </appendix>
-</bookmap>
+![alt text](documentation/1.tiff)
